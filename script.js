@@ -103,8 +103,12 @@ function setWeatherCondition(condition){
     if(condition === 'clear'){
         particle.style.display ='none';
        cityImg.style.filter ='none';
-    }else{
+    }else if(condition === 'rain'){
         particle.style.display ='block';
+        cityImg.style.filter ='brightness(.7)';
+    }
+    else{
+        particle.style.display ='none';
         cityImg.style.filter ='brightness(.7)';
     }
 }
