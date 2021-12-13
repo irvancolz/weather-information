@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramalan Cuaca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon.css">
+</head>
+<body>
+  <div class="background" id="particles-js">
+    <img src="asset/city.jpg" alt="">
+      
+    <div class="detail-container">
+      <div class="loader-container">
+        <div class="loader"></div>
+      </div>
+      <p class="detail weather"></p>
+      <div class="detail temperature">
+          <span></span>
+          <sup>oC</sup>
+      </div>
+      <h4 class="detail name"></h4>
+      <div class="detail visibility"></div>
+      <div class="detail humidity"></div>
+      <div class=" detail wind-speed"></div>
+      <div class="detail pressure"></div>
+
+    </div>
+           
+          <div class="icon-container">    
+                <div class="icon sun-shower" id="mist">
+                  <div class="cloud"></div>
+                  <div class="sun">
+                    <div class="rays"></div>
+                  </div>
+                  <div class="rain"></div>
+                </div>
+
+               <div class="icon thunder-storm" id="thunderstorm">
+                <div class="cloud"></div>
+                <div class="lightning">
+                  <div class="bolt"></div>
+                  <div class="bolt"></div>
+                </div>
+              </div>
+              
+              <div class="icon cloudy" id="cloud">
+                <div class="cloud"></div>
+                <div class="cloud"></div>
+              </div>
+              
+              <div class="icon flurries" id="snow">
+                <div class="cloud"></div>
+                <div class="snow">
+                  <div class="flake"></div>
+                  <div class="flake"></div>
+                </div>
+              </div>
+              
+              <div class="icon sunny" id="clear">
+                <div class="sun">
+                  <div class="rays"></div>
+                </div>
+              </div>
+              
+              <div class="icon rainy" id="rain">
+                <div class="cloud"></div>
+                <div class="rain"></div>
+              </div>
+    
+          </div>
+
+          <div class="credit-container">
+            <a href="https://openweathermap.org/api" class="credit" target="_blank">Open Wather API</a></li>
+            <a href="https://fontawesome.com/" class="credit" target="_blank">Font Awesome</a></li>
+            <a href="https://unsplash.com/@gadiellv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"class="credit">Unsplash</a></li>
+            <a href="https://github.com/VincentGarreau/particles.js/" class="credit" target="_blank">Particle JS</a></li>
+            <a href="https://codepen.io/joshbader/details/EjXgqr" class="credit" target="_blank">Weather Icon</a></li>
+          </div>
+
+          <div class="date-container">
+              <div id="date"></div>
+              <div id="clock"></div>
+            </div>
+
+            <div class="search-container">
+
+              <div class="error-container">
+                <p></p>
+                <div class="close-error">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+
+              <input type="text" class="city-name-input">
+              <div class="enter">Lihat cuaca</div>
+              <div class="home">
+                <p>Cuaca di sekitar</p>
+                <i class="fas fa-home"></i>
+              </div>
+            </div>
+          
+        </div>
+  </div>
+
+    <script src="particles.js"></script>
+    <script src="snow-app.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/15adeb84f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
